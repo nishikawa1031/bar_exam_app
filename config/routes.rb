@@ -8,6 +8,14 @@ Rails.application.routes.draw do
   root 'static_pages#home' # => root_path
   get  '/help',    to: 'static_pages#help'
   get  '/about',   to: 'static_pages#about'
+  get  '/constitution',   to: 'static_pages#constitution'
+  get  '/civil_law',   to: 'static_pages#civil_law'
+  get  '/criminal_law',   to: 'static_pages#criminal_law'
+  get  '/civil_procedure_law',   to: 'static_pages#civil_procedure_law'
+  get  '/criminal_procedure_law',   to: 'static_pages#criminal_procedure_law'
+  get  '/administrative_law',   to: 'static_pages#administrative_law'
+  get  '/commercial_law',   to: 'static_pages#commercial_law'
+
   get  '/contact', to: 'static_pages#contact'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'

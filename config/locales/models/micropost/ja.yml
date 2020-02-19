@@ -1,0 +1,12 @@
+ja:
+  enums:
+    micropost:
+        subject:
+          default: "科目を選択してください"
+          constitution: 憲法
+          civil_law:　民法
+          criminal_law:　刑法
+          civil_procedure_law:　民訴法
+          criminal_procedure_law:　刑訴法
+          administrative_law:　行政法
+          commercial_law:　商法
