@@ -6,6 +6,19 @@ class Micropost < ApplicationRecord
   validates :content, presence: true,
                       length: { maximum: 140 }
   validate  :picture_size
+  validates  :subject, presence: true
+  validates  :year, presence: true
+  
+  
+  enum subject:{
+    constitution: 0,
+    civil_law:1,
+    criminal_law:2,
+    civil_procedure_law:3,
+    criminal_procedure_law:4,
+    administrative_law:5,
+    commercial_law:6,
+}
 
   private
 
