@@ -20,6 +20,10 @@ class Micropost < ApplicationRecord
     commercial_law:6,
 }
 
+  def to_param
+    subject
+  end
+
   private
 
     # アップロードされた画像のサイズをバリデーションする

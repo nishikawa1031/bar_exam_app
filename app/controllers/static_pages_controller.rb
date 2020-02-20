@@ -9,6 +9,11 @@ class StaticPagesController < ApplicationController
     # app/views/static_pages/home.html.erb
   end
 
+
+  def constitution
+    @microposts = Micropost.all
+  end
+
   def help
   end
 
