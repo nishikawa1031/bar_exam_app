@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "みんなで司法試験", root_path, id: "logo" %>
+    <%= link_to "投稿", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-left">
         <li><%= link_to "憲法",   constitution_path %></li>
@@ -8,13 +8,19 @@
         <li><%= link_to "刑法",   criminal_law_path %></li>
         <li><%= link_to "民訴",   civil_procedure_law_path %></li>
         <li><%= link_to "刑訴",   criminal_procedure_law_path %></li>
-        <li><%= link_to "行政法",   administrative_law_path %></li>
+        <li><%= link_to "行政",   administrative_law_path %></li>
         <li><%= link_to "商法",   commercial_law_path %></li>
+        <li><%= link_to "倒産",   commercial_law_path %></li>
+        <li><%= link_to "租税",   commercial_law_path %></li>
+        <li><%= link_to "経済",   commercial_law_path %></li>
+        <li><%= link_to "知財",   commercial_law_path %></li>
+        <li><%= link_to "労働",   commercial_law_path %></li>
+        <li><%= link_to "環境",   commercial_law_path %></li>
+        <li><%= link_to "国私",   commercial_law_path %></li>
+        <li><%= link_to "国公",   commercial_law_path %></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path %></li>
-        <li><%= link_to "Help",   help_path %></li>
         <% if logged_in? %>
           <li><%= link_to "Users", users_path %></li>
           <li class="dropdown">
