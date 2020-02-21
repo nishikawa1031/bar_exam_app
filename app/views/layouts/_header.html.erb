@@ -3,21 +3,21 @@
     <%= link_to "投稿", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-left">
-        <li><%= link_to "憲法",   constitution_path %></li>
-        <li><%= link_to "民法",   civil_law_path %></li>
-        <li><%= link_to "刑法",   criminal_law_path %></li>
-        <li><%= link_to "民訴",   civil_procedure_law_path %></li>
-        <li><%= link_to "刑訴",   criminal_procedure_law_path %></li>
-        <li><%= link_to "行政",   administrative_law_path %></li>
-        <li><%= link_to "商法",   commercial_law_path %></li>
-        <li><%= link_to "倒産",   commercial_law_path %></li>
-        <li><%= link_to "租税",   commercial_law_path %></li>
-        <li><%= link_to "経済",   commercial_law_path %></li>
-        <li><%= link_to "知財",   commercial_law_path %></li>
-        <li><%= link_to "労働",   commercial_law_path %></li>
-        <li><%= link_to "環境",   commercial_law_path %></li>
-        <li><%= link_to "国私",   commercial_law_path %></li>
-        <li><%= link_to "国公",   commercial_law_path %></li>
+        <li><%= link_to "憲法",   static_page_path(name: "constitution") %></li>
+        <li><%= link_to "民法",   static_page_path(name: "civil_law")  %></li>
+        <li><%= link_to "刑法",   static_page_path(name: "criminal_law_path") %></li>
+        <li><%= link_to "民訴",   static_page_path(name: "civil_procedure_law") %></li>
+        <li><%= link_to "刑訴",   static_page_path(name: "criminal_procedure_law") %></li>
+        <li><%= link_to "行政",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "商法",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "倒産",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "租税",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "経済",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "知財",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "労働",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "環境",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "国私",   static_page_path(name: "commercial_law") %></li>
+        <li><%= link_to "国公",   static_page_path(name: "commercial_law") %></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">

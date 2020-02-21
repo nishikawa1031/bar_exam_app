@@ -9,10 +9,12 @@ class StaticPagesController < ApplicationController
     # app/views/static_pages/home.html.erb
   end
 
-
-  def constitution
-    @microposts = Micropost.all
+  # GET /static_pages/:name
+  def show
+    @micropost = Micropost.where(subject: params[:name])
   end
+
+
 
   def help
   end
