@@ -1,9 +1,8 @@
 ja:
-  activerecord:
-    models:
-  enums:
-    micropost:
+  static_pages:
+    home:
       subjects:
+        default: "科目を選択してください"
         constitution: 憲法
         civil_law: 民法
         criminal_law: 刑法
