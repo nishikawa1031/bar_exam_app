@@ -8,9 +8,6 @@ Rails.application.routes.draw do
   root 'static_pages#home' # => root_path
   get  '/help',    to: 'static_pages#help'
   get  '/about',   to: 'static_pages#about'
-
-
-
   get  '/contact', to: 'static_pages#contact'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
@@ -18,6 +15,8 @@ Rails.application.routes.draw do
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+
+  
 
   resources :users do
     member do
@@ -31,5 +30,9 @@ Rails.application.routes.draw do
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :microposts,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
-  resources :static_pages, only: [:show],param: :name
+  resources :static_pages, only: [:show],param: :name do
+  end
+
+  get 'static_pages/:name/:year_id', to: 'static_pages#show'
+
 end
