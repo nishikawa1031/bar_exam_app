@@ -12,6 +12,7 @@ class StaticPagesController < ApplicationController
   # GET /static_pages/:name
   def show
     @micropost = Micropost.where(subject: params[:name])
+    @subject = params[:name]
   end
 
 
