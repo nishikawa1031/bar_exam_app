@@ -4,7 +4,7 @@ class Micropost < ApplicationRecord
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
   validates :content, presence: true,
-                      length: { maximum: 140 }
+                      length: { in: 1..10000 }
   validate  :picture_size
   validates  :subject, presence: true
   validates  :year, presence: true
