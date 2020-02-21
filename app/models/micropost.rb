@@ -18,6 +18,14 @@ class Micropost < ApplicationRecord
     criminal_procedure_law:4,
     administrative_law:5,
     commercial_law:6,
+    bankruptcy_law:7,
+    tax_law:8,
+    economic_law:9,
+    intellectual_property_law:10,
+    labor_law:11,
+    environmental_law:12,
+    international_private_law:13,
+    international_public_law:14,
 }
 
 

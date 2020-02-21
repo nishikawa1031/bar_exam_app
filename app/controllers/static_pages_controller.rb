@@ -14,9 +14,9 @@ class StaticPagesController < ApplicationController
     @subject = params[:name]
     @year = params[:year_id]
     if @year.nil?
-      @micropost = Micropost.where(subject: params[:name])
+      @microposts = Micropost.where(subject: params[:name])
     else
-      @micropost = Micropost.where(subject: params[:name],year: params[:year_id])
+      @microposts = Micropost.where(subject: params[:name],year: params[:year_id])
     end
   end
 
