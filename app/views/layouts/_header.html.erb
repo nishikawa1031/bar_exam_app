@@ -1,9 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <% if logged_in? %>
-      <%= link_to "投稿", root_path, id: "logo" %>
-    <% else %>
+    <% if current_page?(root_path)%>
       <%= link_to "みんなで司法試験", root_path, id: "logo" %>
+    <% else %>
+      <% if logged_in? %>
+        <%= link_to "投稿", root_path, id: "logo" %>
+      <% else %>
+        <%= link_to "投稿する", signup_path, id: "logo" %>
+      <% end %>
     <% end %>
     <nav>
       <ul class="nav navbar-nav navbar-left">
