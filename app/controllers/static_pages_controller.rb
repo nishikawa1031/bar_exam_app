@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
 
   # GET /static_pages/:name
   def show
-    @subject = params[:name]
+    @subject = params[:name]    #カラムのsubjectとは、無関係のsubjectだから注意。
     @year = params[:year_id]
     if @year.nil?
       @microposts = Micropost.where(subject: params[:name])
