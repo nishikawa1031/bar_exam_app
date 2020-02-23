@@ -3,7 +3,7 @@ class Micropost < ApplicationRecord
   default_scope -> { order(created_at: :desc) }
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
-  validates :content, presence: { if: 'picture.nil?'},
+  validates :content, presence: { if: 'picture.blank?'},
                       length: { maximum: 10000 }
   validate  :picture_size
   validates  :subject, presence: true
