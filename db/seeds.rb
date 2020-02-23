@@ -31,10 +31,3 @@ followers = users[3..40]
 following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
 
-
-Micropost.create!(content:  "あいうえおかきくけこさしすせそ",
-  user_id: 1,
-  created_at: Time.zone.now,
-  updated_at: Time.zone.now,
-  subject: 0,
-  year: 2020)
