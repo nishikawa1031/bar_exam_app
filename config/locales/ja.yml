@@ -2,7 +2,6 @@ ja:
   enums:
     micropost:
       subject:
-        default: "科目を選択してください"
         constitution: 憲法
         civil_law: 民法
         criminal_law: 刑法
