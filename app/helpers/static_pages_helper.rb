@@ -1,5 +1,5 @@
 module StaticPagesHelper
-    def subject_title    #絶対もっと短く書ける。
+    def subject_title    #yml使って短く書けそう。時間あるときに直す。
         if @subject == "constitution"
             "憲法"
         elsif @subject == "civil_law"
