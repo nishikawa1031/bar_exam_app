@@ -3,7 +3,7 @@ class Micropost < ApplicationRecord
   default_scope -> { order(created_at: :desc) }
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
-  validates :content, presence: true, length: { maximum: 10000 }
+  validates :content, length: { maximum: 10000 }
   validate  :picture_size
   validates  :subject, presence: true
   validates  :year, presence: true
@@ -33,8 +33,8 @@ class Micropost < ApplicationRecord
 
     # アップロードされた画像のサイズをバリデーションする
     def picture_size
-      if picture.size > 1.megabytes
-        errors.add(:picture, "should be less than 1MB")
+      if picture.size > 3.megabytes
+        errors.add(:picture, "should be less than 3MB")
       end
     end
 end
