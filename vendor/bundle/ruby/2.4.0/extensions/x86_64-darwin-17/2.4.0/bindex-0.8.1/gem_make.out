@@ -1,0 +1,15 @@
+current directory: /Users/nishikawa/Documents/bar_exam_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/nishikawa/.rbenv/versions/2.4.3/bin/ruby -I /Users/nishikawa/.rbenv/versions/2.4.3/lib/ruby/site_ruby/2.4.0 -r ./siteconf20210225-50878-qbnltx.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nishikawa/Documents/bar_exam_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/nishikawa/Documents/bar_exam_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/nishikawa/Documents/bar_exam_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210225-50878-1uc0i3x/skiptrace/internal

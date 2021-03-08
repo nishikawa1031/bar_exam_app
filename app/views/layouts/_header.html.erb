@@ -1,0 +1,56 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+      <%= link_to "司法試験答案集", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-left">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              カテゴリ検索 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "憲法",   static_page_path(name: "constitution") %></li>
+              <li><%= link_to "民法",   static_page_path(name: "civil_law")  %></li>
+              <li><%= link_to "刑法",   static_page_path(name: "criminal_law") %></li>
+              <li><%= link_to "民訴",   static_page_path(name: "civil_procedure_law") %></li>
+              <li><%= link_to "刑訴",   static_page_path(name: "criminal_procedure_law") %></li>
+              <li><%= link_to "行政",   static_page_path(name: "administrative_law") %></li>
+              <li><%= link_to "商法",   static_page_path(name: "commercial_law") %></li>
+              <li><%= link_to "倒産",   static_page_path(name: "bankruptcy_law") %></li>
+              <li><%= link_to "租税",   static_page_path(name: "tax_law") %></li>
+              <li><%= link_to "経済",   static_page_path(name: "economic_law") %></li>
+              <li><%= link_to "知財",   static_page_path(name: "intellectual_property_law") %></li>
+              <li><%= link_to "労働",   static_page_path(name: "labor_law") %></li>
+              <li><%= link_to "環境",   static_page_path(name: "environmental_law") %></li>
+              <li><%= link_to "国私",   static_page_path(name: "international_private_law") %></li>
+              <li><%= link_to "国公",   static_page_path(name: "international_public_law") %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <% if logged_in? %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile",  current_user %></li>
+              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

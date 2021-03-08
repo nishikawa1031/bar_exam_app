@@ -1,0 +1,16 @@
+<div class="row">
+    <aside class="col-md-2">
+        <%= render 'layouts/sidebar' %>
+    </aside>
+
+    <h1><%= @year %>　<%= subject_title %></h1>
+
+    <div class="col-md-10">
+        <ul class="microposts">
+        <%= render @microposts %>
+        </ul>
+    </div>
+</div>
+
+
+

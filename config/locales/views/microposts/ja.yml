@@ -1,0 +1,18 @@
+ja:
+  microposts:
+    subjects:
+      constitution: 憲法
+      civil_law: 民法
+      criminal_law: 刑法
+      civil_procedure_law: 民訴法
+      criminal_procedure_law: 刑訴法
+      administrative_law: 行政法
+      commercial_law: 商法
+      bankruptcy_law: 倒産法
+      tax_law: 租税法
+      economic_law: 経済法
+      intellectual_property_law: 知的財産法
+      labor_law: 労働法
+      environmental_law: 環境法
+      international_private_law: 国際私法
+      international_public_law: 国際公法
